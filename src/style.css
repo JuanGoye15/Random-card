@@ -4,3 +4,9 @@
   height: 600px;
   width: 400px;
 }
+
+#superDuperButton {
+  height: 25px;
+  width: 100px;
+  margin-left: 50px;
+}

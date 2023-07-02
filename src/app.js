@@ -36,4 +36,13 @@ const myCard = () => {
 
   let element2 = letter[Math.floor(Math.random() * letter.length)];
   document.getElementById("number").innerHTML = element2;
+
+  let button = document.querySelector("#superDuperButton");
+  button.addEventListener("click", function() {
+    let element = symbol[Math.floor(Math.random() * symbol.length)];
+    document.getElementsByClassName("symbol")[0].innerHTML = element;
+
+    let element2 = letter[Math.floor(Math.random() * letter.length)];
+    document.getElementById("number").innerHTML = element2;
+  });
 };
