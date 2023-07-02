@@ -7,23 +7,33 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  myExcuse();
+  myCard();
 };
 
-const myExcuse = () => {
-  let who = ["The dog", "My grandma", "His turtle", "My bird"];
-  let action = ["ate", "peed", "crushed", "broke"];
-  let what = ["my homework", "the keys", "the car"];
-  let when = [
-    "before the class",
-    "right on time",
-    "when I finished",
-    "during my lunch",
-    "while I was praying"
+const myCard = () => {
+  let symbol = ["♦", "♥", "♠", "♣"];
+  let letter = [
+    "A",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "J",
+    "K",
+    "Q"
   ];
-  let element = who[Math.floor(Math.random() * who.length)] + " ";
-  element += action[Math.floor(Math.random() * action.length)] + " ";
-  element += what[Math.floor(Math.random() * what.length)] + " ";
-  element += when[Math.floor(Math.random() * when.length)] + " ";
-  document.getElementById("excuse").innerHTML = element;
+
+  let element = symbol[Math.floor(Math.random() * symbol.length)];
+  document.getElementsByClassName("symbol")[0].innerHTML = element;
+
+  // let element2 = symbol[Math.floor(Math.random() * symbol.length)];
+  // document.getElementById("symbol2").innerHTML = element2;
+
+  let element2 = letter[Math.floor(Math.random() * letter.length)];
+  document.getElementById("number").innerHTML = element2;
 };
