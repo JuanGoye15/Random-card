@@ -11,7 +11,7 @@ window.onload = function() {
 };
 
 const myCard = () => {
-  let symbol = ["♦", "♥", "♠", "♣"];
+  let symbol = ["♦️", "❤️", "♠", "♣"];
   let letter = [
     "A",
     "2",

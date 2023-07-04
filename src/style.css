@@ -10,3 +10,11 @@
   width: 100px;
   margin-left: 50px;
 }
+
+#symbol {
+  font-size: 100px;
+}
+
+#number {
+  font-size: 150px;
+}
