@@ -30,7 +30,7 @@ const myCard = () => {
 
   let element = symbol[Math.floor(Math.random() * symbol.length)];
   document.getElementById("symbol").innerHTML = element;
-
+  document.getElementById("symbol2").innerHTML = element;
   // Numero
   let element2 = letter[Math.floor(Math.random() * letter.length)];
   document.getElementById("number").innerHTML = element2;
@@ -38,9 +38,11 @@ const myCard = () => {
   // Pinta de rojo
   if (element == "♥" || element == "♦") {
     document.getElementById("symbol").style.color = "red";
+    document.getElementById("symbol2").style.color = "red";
     document.getElementById("number").style.color = "red";
   } else {
     document.getElementById("symbol").style.color = "black";
+    document.getElementById("symbol2").style.color = "black";
     document.getElementById("number").style.color = "black";
   }
 
@@ -48,15 +50,18 @@ const myCard = () => {
   button.addEventListener("click", function() {
     let element = symbol[Math.floor(Math.random() * symbol.length)];
     document.getElementById("symbol").innerHTML = element;
+    document.getElementById("symbol2").innerHTML = element;
 
     let element2 = letter[Math.floor(Math.random() * letter.length)];
     document.getElementById("number").innerHTML = element2;
 
     if (element == "♥" || element == "♦") {
       document.getElementById("symbol").style.color = "red";
+      document.getElementById("symbol2").style.color = "red";
       document.getElementById("number").style.color = "red";
     } else {
       document.getElementById("symbol").style.color = "black";
+      document.getElementById("symbol2").style.color = "black";
       document.getElementById("number").style.color = "black";
     }
   });

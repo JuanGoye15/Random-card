@@ -1,7 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 #card {
-  height: 600px;
+  height: 650px;
   width: 400px;
 }
 
@@ -13,6 +13,12 @@
 
 #symbol {
   font-size: 100px;
+}
+
+#symbol2 {
+  font-size: 100px;
+  float: right;
+  margin-bottom: 50px;
 }
 
 #number {
