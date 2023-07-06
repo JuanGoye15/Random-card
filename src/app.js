@@ -11,7 +11,7 @@ window.onload = function() {
 };
 
 const myCard = () => {
-  let symbol = ["♦️", "❤️", "♠", "♣"];
+  let symbol = ["♦", "♥", "♠", "♣"];
   let letter = [
     "A",
     "2",
@@ -29,20 +29,35 @@ const myCard = () => {
   ];
 
   let element = symbol[Math.floor(Math.random() * symbol.length)];
-  document.getElementsByClassName("symbol")[0].innerHTML = element;
+  document.getElementById("symbol").innerHTML = element;
 
-  // let element2 = symbol[Math.floor(Math.random() * symbol.length)];
-  // document.getElementById("symbol2").innerHTML = element2;
-
+  // Numero
   let element2 = letter[Math.floor(Math.random() * letter.length)];
   document.getElementById("number").innerHTML = element2;
 
-  let button = document.querySelector("#superDuperButton");
+  // Pinta de rojo
+  if (element == "♥" || element == "♦") {
+    document.getElementById("symbol").style.color = "red";
+    document.getElementById("number").style.color = "red";
+  } else {
+    document.getElementById("symbol").style.color = "black";
+    document.getElementById("number").style.color = "black";
+  }
+
+  let button = document.getElementById("superDuperButton");
   button.addEventListener("click", function() {
     let element = symbol[Math.floor(Math.random() * symbol.length)];
-    document.getElementsByClassName("symbol")[0].innerHTML = element;
+    document.getElementById("symbol").innerHTML = element;
 
     let element2 = letter[Math.floor(Math.random() * letter.length)];
     document.getElementById("number").innerHTML = element2;
+
+    if (element == "♥" || element == "♦") {
+      document.getElementById("symbol").style.color = "red";
+      document.getElementById("number").style.color = "red";
+    } else {
+      document.getElementById("symbol").style.color = "black";
+      document.getElementById("number").style.color = "black";
+    }
   });
 };
